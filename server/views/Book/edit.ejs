@@ -1,0 +1,48 @@
+<%- include ../Partials/header.ejs %>
+<%- include ../Partials/main_nav.ejs %>
+<!--Content for add page-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title%></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="taskTextField">Task Name</label>
+                    <input type="text" class="form-control" id="taskTextField"
+                    placeholder="Enter the task name" name="task" value="<%= Task.task %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="courseTextField">Course Name</label>
+                    <input type="text" class="form-control" id="courseTextField"
+                    placeholder="Enter the course name" name="course" value="<%= Task.course %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="weightTextField">Weight</label>
+                    <input type="text" class="form-control" id="weightTextField"
+                    placeholder="Enter the task weight" name="weight" value="<%= Task.weight %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="deadlineTextArea">Deadline</label>
+                    <textarea type="text" class="form-control" id="deadlinetextField"
+                    placeholder="Enter the deadline" name="deadline" required><%= Task.deadline %>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="completeTextField">Complete</label>
+                    <input type="text" class="form-control" id="completeTextField"
+                    placeholder="Enter Y for complete, N for not completed" name="complete" value="<%= Task.complete %>" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <i class = "fas fa-edit"></i>
+
+                <button class="btn btn-warning" type="submit">Cancel</button>
+                <i class = "fas fa-undo"></i>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include ../Partials/footer.ejs %>
