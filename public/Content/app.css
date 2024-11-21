@@ -1,0 +1,151 @@
+*{
+    font-family: sans-serif;
+}
+
+#wrapper {
+    min-width: 960px;
+    min-height: 755px;
+    background-color: rgb(226, 247, 255);
+    color: rgb(50, 191, 242);
+}
+/**************************************************/
+/*CSS for navbar and footer on ALL pages*/
+
+.navbar-brand {
+    font-size: 50px;
+    font-family: "Lucida Console", "Monaco", monospace;
+    background-color: transparent;
+    color: #ffc97f; 
+}
+.navbar-brand:hover {
+    font-size: 50px;
+    font-family: "Lucida Console", "Monaco", monospace;
+    background-color: transparent;
+    color:#0ea7b5; 
+}
+
+.nav-link{
+    color: #ffc97f;
+}
+
+
+.footer-text{
+    font-family: "Lucida Console", "Monaco", monospace;
+    background-color: transparent;
+    color: #ffc97f; 
+}
+
+/**************************************************/
+/*CSS for HOME page left side*/
+#indexPage {
+    float: inline-start; 
+    width: 100%;
+    min-height: 775px;
+    background: #b0e0e5;
+
+}
+
+/*left side*/
+#leftSide{
+    float: left;
+    width: 50%;
+}
+
+/*CSS for home page text*/
+#mainText1{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 70px;
+    color: #e8702a; 
+    margin-top: 9%;
+    margin-left: 5%;
+}
+
+#mainText{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 70px;
+    color: #e8702a; 
+    margin-top: 12px;
+    margin-left: 5%;
+}
+
+#secondText{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 50px;
+    color: #0c457d; 
+    margin-top: 35px;
+    margin-left: 5%;
+}
+
+/*right side*/
+#rightSide{
+    float: right;
+    width: 50%;
+}
+#icon img{
+    margin-top: 9%;
+    margin-left: 30%;
+    max-width: 50%; /*430px;*/
+    max-height: 50%/*340px;*/
+}
+
+/*button to go to task list*/
+.homeButton .btn{
+  background-color: #e8702a;
+  color: #ffbe4f;
+  font-family: 'Lucida Grande';
+  font-size: 200%;
+  height: 75px;
+  border: 2px whitesmoke;
+  border-radius: 5px; /*This rounds the edges*/
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.homeButton .btn:hover
+{
+    background-color: #ffbe4f;
+    color: #e8702a;
+    height: 75px;
+    border: 2px whitesmoke;
+    border-radius: 5px; /*This rounds the edges*/
+}
+/**************************************************/
+
+
+/**************************************************/
+/*CSS for Task page left side*/
+.container {
+    float: inline-start; 
+    min-height: 775px;
+    background: #b0e0e5;
+}
+
+#mainText2{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 60px;
+    color: #e8702a; 
+    margin-top: 2%;
+
+}
+
+.d-flex .text-center{
+    background-color: #ffd182;
+    color: #0c457d;
+}
+
+.fas{
+    color: #0c457d;
+    font-size: 25px;
+}
+
+
+ 
+ 

@@ -1,7 +1,30 @@
   <%- include Partials/header.ejs %>
   <%- include Partials/main_nav.ejs %>
+
+  <link href="/Content/app.css" rel="stylesheet" type="text/css">
   <!--Main Content-->
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    
+  <div id="indexPage">
+    <div id="leftSide">
+      <p id="mainText1">Welcome  </p>
+      <p id="mainText">To Your  </p>
+      <p id="mainText">Assignment Tracker </p>
+      <p id="secondText">Never miss a deadline!</p>
+    </div>
+    
+    <div id="rightSide">
+      <figure id="icon">
+        <img src="Assets/images/homePage.png" alt="task icon">
+      </figure>
+  
+      <div class="homeButton">
+        <a href="/tasklist" class="btn">Go To Your Assignments</a>
+      </div>
+    </div>
+    
+
+  </div>
+  
+  
     
 <%- include Partials/footer.ejs %>

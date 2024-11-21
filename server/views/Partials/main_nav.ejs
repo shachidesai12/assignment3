@@ -1,9 +1,11 @@
   <!--Navbar-->
-  <nav class="navbar" style="background-color: #eb7777;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Task Manager</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar" style="background-color: #0c457d;">
+    <div class="container-fluid">   
+      <img  src="/Assets/images/calendar.png" alt="logo" class="company" class="logo" height="75" weight="75">
+      <a class="navbar-brand" href="/">Assignment Tracker</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #ffc97f;">
+        <span class="navbar-toggler-icon" ></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
@@ -13,16 +15,16 @@
              <% } else { %>     
               <a class="nav-link" href="/home">
             <% } %>
-              <i class="fa-solid fa-house-chimney"></i> Home</a>
+              <i class="fa-solid fa-house-chimney" style="color: #ffc97f;"></i> Home</a>
           </li>
 
           <li class="nav-item">
-            <% if(title=="Books") { %>
-                <a class="nav-link active" href="/bookslist">
+            <% if(title=="Tasks") { %>
+                <a class="nav-link active" href="/tasklist">
              <% } else { %>     
-              <a class="nav-link" href="/bookslist">
+              <a class="nav-link" href="/tasklist">
             <% } %>
-            <i class="fa-solid fa-list-check"></i> Books</a>
+            <i class="fa-solid fa-list-check" style="color: #ffc97f;"></i> Tasks</a>
               </li>
         </ul>
       </div>

@@ -103,8 +103,8 @@ try{
     Task.deleteOne({_id:id}).then(()=>{
         res.redirect('/tasklist')
     })
-    
 }
+    
 catch(err){
     console.error(err)
     res.render('Task/list',{

@@ -42,14 +42,7 @@ app.use(session({
   saveUninitialized: false,
   resave: false
 }))
-//initialize flash 
-app.use(flash());
-//serialize and deserialize the user information
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-//initialize passport
-app.use(passport.initialize());
-app.use(passport.session());
+
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
