@@ -7,20 +7,13 @@ let logger = require('morgan');
 let app = express();
 let cors = require('cors')
 
-
+//Routing
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let taskRouter = require('../routes/task')
 
 
-
-//Libraries required before performing authentication 
 let session = require('express-session')
-let passport = require('passport')
-let passportLocal = require('passport-local')
-let localStrategy = passportLocal.Strategy;    //Need to create stratgey for passportLocal above 
-let flash = require('connect-flash')
-
 
 let mongoose = require('mongoose');
 let DB = require('./db');
