@@ -5,6 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
+            <!--Establish the input fields and change value based on new addition-->
             <h1><%= title%></h1>
             <form class="form" method="POST">
                 <div class="form-group">
@@ -23,10 +24,9 @@
                     placeholder="Enter the task weight" name="weight" value="<%= Task.weight %>" required>
                 </div>
                 <div class="form-group">
-                    <label for="deadlineTextArea">Deadline</label>
-                    <textarea type="text" class="form-control" id="deadlinetextField"
-                    placeholder="Enter the deadline" name="deadline" required><%= Task.deadline %>
-                    </textarea>
+                    <label for="deadlineTextField">Deadline</label>
+                    <input type="text" class="form-control" id="deadlineTextField"
+                    placeholder="Enter the deadline" name="deadline" value="<%= Task.deadline %>" required>
                 </div>
                 <div class="form-group">
                     <label for="completeTextField">Complete</label>

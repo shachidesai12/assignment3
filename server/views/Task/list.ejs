@@ -1,7 +1,7 @@
 <%- include ../Partials/header.ejs %>
 <%- include ../Partials/main_nav.ejs %>
 <link href="/Content/app.css" rel="stylesheet" type="text/css">
-<main class="container">
+<div id="container">
     <div class="row">
         <div class="offset-md-1 col-md-10">
             <h1 id="mainText2">Assignments</h1>
@@ -20,6 +20,7 @@
                 <th class="text-center col-2">Edit/Delete</th>
                 
             </tr>
+            <!--Fill in table with information from mongoDB-->
             <% for(let count=0;count<TaskList.length;count++) { %>
             <tr class="d-flex">
                 <td class="text-center col-2"><%= TaskList[count].task %></td>
@@ -27,13 +28,15 @@
                 <td class="text-center col-1"><%= TaskList[count].weight %></td>
                 <td class="text-center col-2"><%= TaskList[count].deadline %></td>
                 <td class="text-center col-1"><%= TaskList[count].complete %></td>
-                    <td class="text-center col-1">
+                <!--Go to edit code when edit button clicked-->    
+                <td class="text-center col-1">
                     <a href="/tasklist/edit/<%= TaskList[count]._id%>" 
                         class="btn btn-primary btn-sm">
                         <i class="fa-regular fa-pen-to-square"></i>
                     </a>
                 </td>
                 <td class="text-center col-1">
+                    <!--Go to delete code when delete button clicked-->    
                     <a href="/tasklist/delete/<%= TaskList[count]._id%>" onclick="return confirm('Are you sure you want to delete')" 
                         class="btn btn-danger btn-sm">
                         <i class="fa-solid fa-ban"></i>

@@ -17,6 +17,7 @@ let session = require('express-session')
 
 let mongoose = require('mongoose');
 let DB = require('./db');
+
 // point my mongoose to the URI
 mongoose.connect(DB.URI)
 

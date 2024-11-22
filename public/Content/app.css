@@ -24,7 +24,15 @@
     color:#0ea7b5; 
 }
 
-.nav-link{
+.nav-item{
+    color: #ffc97f;
+}
+
+.navText:hover{
+    color: #e8702a;
+}
+
+.navText{
     color: #ffc97f;
 }
 
@@ -43,6 +51,13 @@
     min-height: 775px;
     background: #b0e0e5;
 
+}
+
+#container {
+    float: inline-start; 
+    width: 100%;
+    min-height: 775px;
+    background: #b0e0e5;
 }
 
 /*CSS for HOME page left side*/
@@ -138,7 +153,7 @@
 }
 
 .d-flex .text-center{
-    background-color: #ffd182;
+    background-color: #ffd387;
     color: #0c457d;
 }
 
