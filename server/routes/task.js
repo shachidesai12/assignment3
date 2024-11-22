@@ -9,7 +9,7 @@ router.get('/',async(req,res,next)=>{
     try{
         const TaskList = await Task.find();
         res.render('Task/list',{
-            title:'Tasks',
+            title:'Assignments',
             TaskList:TaskList
         })
     }
@@ -24,7 +24,7 @@ router.get('/',async(req,res,next)=>{
 router.get('/add',async(req,res,next)=>{
     try{
         res.render('Task/add',{
-            title: 'Add Task'});
+            title: 'Add Assignment'});
     }
     catch(err){
         console.error(err)
@@ -60,7 +60,7 @@ router.get('/edit/:id',async(req,res,next)=>{
         const taskToEdit=await Task.findById(id);
         res.render('Task/edit',
             {
-                title: 'Edit Task',
+                title: 'Edit Assignment',
                 Task:taskToEdit
             }
         )

@@ -160,8 +160,23 @@
 .fas{
     color: #0c457d;
     font-size: 25px;
+    margin-left: 65px;
 }
 
+.addText{
+    color: #0c457d;
+    font-size: 25px;
+}
+
+.table{
+    margin-left: 80px;
+}
+#titleText{
+    font-family: 'Trebuchet MS';
+    color: #e8702a;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 
  
  

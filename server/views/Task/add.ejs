@@ -2,11 +2,11 @@
 <%- include ../Partials/main_nav.ejs %>
 <link href="/Content/app.css" rel="stylesheet" type="text/css">
 <!--Content for add page-->
-<div class="container">
+<div id="container">
     <!--Establish the input fields -->
     <div class="row">
         <div class="offset-md-3 col-md-6">
-            <h1><%= title%></h1>
+            <h1 id="titleText"><%= title%></h1>
             <form class="form" method="POST">
                 <div class="form-group">
                     <label for="taskTextField">Assignment Name</label>
@@ -37,14 +37,11 @@
                 <button class="btn btn-primary" type="submit">Submit</button>
                 <i class = "fas fa-edit"></i>
 
-                <button class="btn btn-warning" type="submit">Cancel</button>
+                <button class="btn btn-warning" type="button" onclick="window.location.href = '/tasklist'">Cancel</button>
                 <i class = "fas fa-undo"></i>
             </form>
         </div>
     </div>
 </div>
-
-
-
 
 <%- include ../Partials/footer.ejs %>
